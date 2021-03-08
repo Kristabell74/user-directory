@@ -1,15 +1,15 @@
 import axios from "axios";
 
-// Export an object containing methods we'll use for accessing the Dog.Ceo API
+// Export an object containing methods we'll use for accessing the person.Ceo API
 
 export default {
-    getRandomUser: function () {
-        return axios.get("https://randomuser.me/");
+    getRandomPerson: function () {
+        return axios.get("https://randomuser.me/api/1.3");
     },
-    getRandomMales: function (breed) {
-        return axios.get("https://randomuser.me?inc=gender,name,nat");
+    getRandomGender: function (breed) {
+        return axios.get("https://randomuser.me/api/1.3/?inc=gender,name");
     },
-    getRandomRemales: function () {
-        return axios.get("https://dog.ceo/api?inc=picture,name");
+    getRandomPictures: function () {
+        return axios.get("https://randomuser.me/api/1.3/?inc=picture,name");
     }
 };
