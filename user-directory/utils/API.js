@@ -6,10 +6,10 @@ export default {
     getRandomPerson: function () {
         return axios.get("https://randomuser.me/api/1.3");
     },
-    getRandomGender: function (breed) {
-        return axios.get("https://randomuser.me/api/1.3/?inc=gender,name");
+    getRandomLocal: function (gender) {
+        return axios.get("https://randomuser.me/api/1.3/?inc= name, location, picture");
     },
-    getRandomPictures: function () {
-        return axios.get("https://randomuser.me/api/1.3/?inc=picture,name");
+    getRandomGender: function () {
+        return axios.get("https://randomuser.me/api/1.3/?gender");
     }
 };
