@@ -4,12 +4,12 @@ import axios from "axios";
 
 export default {
     getRandomPerson: function () {
-        return axios.get("https://randomuser.me/api/1.3");
+        return axios.get("https://randomuser.me/api/");
     },
     getRandomLocal: function (gender) {
-        return axios.get("https://randomuser.me/api/1.3/?inc= name, location, picture");
+        return axios.get("https://randomuser.me/api/?inc= ");
     },
     getRandomGender: function () {
-        return axios.get("https://randomuser.me/api/1.3/?gender");
+        return axios.get("https://randomuser.me/api//?gender");
     }
 };
